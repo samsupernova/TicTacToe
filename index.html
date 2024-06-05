@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    
+    <div class="first-ttt">
+        TIC TAC TOE
+        <hr>
+    </div>
+    <div class="about hidden">
+        <div class="about-first">
+            <div>
+                <h1>ABOUT</h1>
+            </div>
+            <div class="about-close">
+                <button id="btn-close-about">X</button>
+            </div>
+        </div>  
+        <div>  
+            <p>
+                Developed by Sameer Kumar
+            </p>
+            <p>started: 27th May 2024</p>
+            <p>Last updated: 4th June 2024</p>
+        </div>
+    </div>
+    <div class="entry-screen">
+        <div class="ent-first">
+            <div class="ent-p-1">
+                <div>
+                    player 1
+                </div>
+                <div>
+                    <input id="ent-inp-1" placeholder="Enter Name">
+                </div>
+            </div>
+
+            <div class="ent-p-2">
+                <div>
+                    player 2
+                </div>
+                <div>
+                <input id="ent-inp-2" placeholder="Enter Name">
+                </div>
+            </div>
+        </div>
+
+        <div class="ent-second">
+            <div></div>
+            <button id="btn-ent">ENTER</button>
+            <div></div>
+        </div>
+    </div>
+
+    
+    <div class="main hidden">
+            <div class="result-sec">
+                <div></div>
+                <div class="result hidden"></div>
+                <button class="btn-again hidden">PLAY AGAIN</button>
+            </div>
+        <div class="first">
+            <div id="name-1"></div>
+            <div id="score-1">0</div>
+            <div class="middle"></div>
+            <div id="score-2">0</div>
+            <div id="name-2"></div>
+        </div>
+             
+        <div class="second">
+            <div class="left">
+                <div id="player-1">
+                    <div></div>
+                    <div id="x">
+                        X
+                    </div>
+                    <div id="result-1"></div>
+                </div>
+            </div>
+            <div class="btn">
+                <div class="r-1">
+                    <div>
+                        <button id="btn-1"></button>
+                    </div>
+                    <div>
+                        <button id="btn-2"></button>
+                    </div>
+                    <div>
+                        <button id="btn-3"></button>
+                    </div>
+                                  
+                </div>
+                
+                <div class="r-2">
+                    <div>
+                        <button id="btn-4"></button>
+                    </div>
+                    <div>
+                        <button id="btn-5"></button>
+                    </div>
+                    <div>
+                        <button id="btn-6"></button>
+                    </div>
+                </div>
+
+                <div class="r-3">
+                    <div>
+                        <button id="btn-7"></button>
+                    </div>
+                    <div>
+                        <button id="btn-8"></button>
+                    </div>
+                    <div>
+                        <button id="btn-9"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div id="player-2">
+                    <div></div>
+                    <div id="o">
+                      O
+                    </div>
+                    <div id="result-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="third">
+            <div></div>
+            <div>
+                <button id="btn-clear">CLEAR</button>
+            </div>
+            <div>
+                <button id="btn-reset">RESET</button>
+            </div>
+            <div></div>
+        </div>
+
+    </div>
+    <div class="end">
+        <button id="btn-about">ABOUT</button>
+        <span class="material-symbols-outlined">
+        copyright
+        </span>SameerKumar 2024
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

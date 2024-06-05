@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: #222;
+}
+.result{
+    color: white;
+    text-align: center;
+    height: 57.2px;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.second{
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+}
+.third{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 180px 120px 1fr;
+}
+.btn{
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+}
+#btn-reset{ 
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #222;
+    background-color: white;
+}
+#btn-reset:hover{
+    color: white;
+    background-color: black;
+}
+#btn-reset:active{
+    color: #222;
+    background-color: white;
+}
+#btn-clear{
+    background-color: red;
+    color: white;
+    height:50px;
+    border: none;
+    border-radius: 5px;
+    width:150px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#btn-clear:hover{
+    color: red;
+    background-color: white;
+
+}
+#btn-clear:active{
+    background-color: red;
+    color: white;
+}
+#btn-1,#btn-2,#btn-3,#btn-4,#btn-5,#btn-6,#btn-7,#btn-8,#btn-9{
+    margin: 0;
+    border: none;
+    margin: 0;
+    height: 100px;
+    width: 100px;
+    background-color: #ffffff;
+    font-size: 25px;
+    color: #222;
+
+}
+#btn-1,#btn-4,#btn-7{
+    border-right: 2px solid #ff0000;
+}
+#btn-3,#btn-6,#btn-9{
+    border-left: 2px solid #ff0000;
+}
+#btn-1,#btn-2,#btn-3{
+    border-bottom: 2px solid #ff0000;
+}
+#btn-7,#btn-8,#btn-9{
+    border-top: 2px solid #ff0000;
+}
+#btn-1:hover,#btn-2:hover,#btn-3:hover,#btn-4:hover,#btn-5:hover,#btn-6:hover,#btn-7:hover,#btn-8:hover,#btn-9:hover{
+    background-color: rgb(140, 204, 238);
+    color: white;
+    cursor: pointer;
+}
+
+#player-1, #player-2{
+    color: white;
+    flex: 1;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+   
+}
+.r-1,.r-2,.r-3{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+}
+#p-1,#p-2{
+    margin-top: 20px;
+    height: 30px;
+}
+#x{
+    text-align: center;
+    font-size: 100px;
+}
+#o{
+    text-align: center;
+    font-size: 100px;
+}
+#name-1,#name-2{
+    height: 20px;
+    font-size: 40px;
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 30px;
+ 
+}
+#name-1{
+    text-align: end;
+}
+#name-2{
+    text-align: start;
+}
+.middle{
+    flex: 1;
+}
+#score-1,#score-2{
+    margin: 20px;
+    height: 40px;
+    width:50px;
+    background-color: white;
+    color:#222;
+    text-align: center;
+    padding: 2px;
+    padding-left: 7px;
+    font-size: 45px;
+    border: solid 2px blue;
+}
+#result-1,#result-2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.result-sec{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+ 
+}
+.btn-again{ 
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #222;
+    background-color: white;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+.btn-again:hover{
+    color: white;
+    background-color: black;
+}
+
+/*ENTRY SCREEN*/
+.entry-screen{
+    display:flex;
+    flex-direction: column;
+
+}
+.first-ttt{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+.ent-first{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.ent-p-1,.ent-p-2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    flex: 1;
+    justify-content: end;
+}
+.ent-p-1{
+    border-right: 2px white solid;
+}
+#ent-inp-1,#ent-inp-2{
+    margin-top: 20px;
+    font-size: 30px;
+    height: 50px;
+    width: 200px;
+    padding: none;
+}
+#ent-inp-1::placeholder,#ent-inp-2::placeholder{
+    font-size: 20px;
+}
+.ent-second{
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+
+}
+#btn-ent{
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn-ent:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.707);
+}
+.hidden{
+    display: none;
+}
+
+.end{
+    background-color: rgba(243, 243, 243, 0.944);
+    color: #222;
+    position: fixed;
+    bottom: 0;
+    text-align: end;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.about{
+    background-color: grey;
+    margin: 10%;
+    padding: 2%;
+    padding-top: 10px;
+    padding-right: 50px;
+}
+.about-first{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+}
+.close-about{
+    margin-top: 0;
+}
+#btn-about{ 
+    text-align: center;
+    position:fixed;
+    left: 10;
+    height: 25px;
+    width: 120px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #222;
+    background-color: white;
+}
+#btn-about:hover{
+    color: white;
+    background-color: black;
+}
+#btn-about:active{
+    color: #222;
+    background-color: white;
+}
+#btn-close-about{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    background-color: red;
+    color: white;
+    height:40px;
+    border: none;
+    border-radius: 5px;
+    width:50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#btn-close-about:hover{
+    color: red;
+    background-color: white;
+
+}
+#btn-close-about:active{
+    background-color: red;
+    color: white;
+}
